@@ -7,7 +7,7 @@ from rlcc.schedule import ExponentialSchedule, BoundedSchedule
 
 class Config:
    def __init__(self):
-      self.device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+      self.device = "cpu" # torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
       #self.num_agents = 2
       #self.in_actor = #
       #self.hidden_in_actor = #
